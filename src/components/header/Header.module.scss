@@ -1,0 +1,88 @@
+.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 2px solid rgba(128, 128, 128, 0.514);
+  height: 130px;
+
+  @media (max-width: 1170px) {
+    height: 90px;
+  }
+}
+
+.logo-and-list {
+  display: flex;
+  flex-direction: row;
+  align-items: stretch;
+  gap: 60px;
+  justify-content: space-between;
+  min-width: 500px;
+  height: 100%;
+
+  @media (max-width: 1170px) {
+    padding-left: 10px;
+    min-width: 220px;
+    justify-content: flex-start;
+    gap: 20px;
+  }
+
+  img {
+    align-self: center;
+  }
+}
+
+.list {
+  display: flex;
+  justify-content: space-between;
+  column-gap: 20px;
+
+  div {
+    color: rgba(0, 0, 0, 0.573);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    &:hover {
+      height: 102%;
+      color: black;
+      cursor: pointer;
+      border-bottom: 4px solid orange;
+    }
+  }
+}
+
+.card-and-avatar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  column-gap: 30px;
+}
+
+.avatar {
+  height: 90px;
+  border-radius: 50%;
+
+  @media (max-width: 1170px) {
+    height: 40px;
+  }
+
+  &:hover {
+    box-shadow: 0 0 0 2px orange;
+    cursor: pointer;
+  }
+}
+
+.cart {
+  height: 25px;
+  &:hover {
+    transform: scale(1.2);
+    cursor: pointer;
+  }
+}
+
+.menu-icon {
+  transform: scale(1.2);
+  &:hover {
+    cursor: pointer;
+  }
+}
