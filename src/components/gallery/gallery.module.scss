@@ -1,0 +1,49 @@
+.container-pics-main {
+  width: 50%;
+  max-height: 70vh;
+}
+
+.container-nested {
+  width: 70%;
+  margin: 0px auto 0px auto;
+}
+
+.current-pic {
+  width: 100%;
+  max-height: 70%;
+  border-radius: 10px;
+
+  &:hover {
+    cursor: pointer;
+  }
+}
+
+.pics-list {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10px;
+  gap: 10px;
+  max-height: 30%;
+
+  .list-pic {
+    width: 100%;
+    height: 100%;
+  }
+
+  .container-pic {
+    border-radius: 10px;
+    overflow: hidden;
+
+    &:hover {
+      cursor: pointer;
+    }
+  }
+
+  .selected-pic {
+    filter: opacity(80%);
+  }
+
+  .container-pic-selected {
+    box-shadow: 0 0 0 2px orange;
+  }
+}

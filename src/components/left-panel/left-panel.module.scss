@@ -1,0 +1,75 @@
+.left-panel-back {
+  position: absolute;
+  height: 100vh;
+  width: 100vw;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.45);
+  z-index: 1;
+
+  &:hover {
+    cursor: pointer;
+  }
+}
+
+.left-panel-menu {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 330px;
+  background-color: rgb(255, 255, 255);
+  z-index: 2;
+  cursor: auto;
+}
+
+.left-panel-enter-active {
+  animation: backgroung-opacity 0.2s reverse;
+}
+
+.left-panel-exit-active {
+  animation: backgroung-opacity 0.2s;
+}
+
+@keyframes backgroung-opacity {
+  from {
+    opacity: 1;
+  }
+
+  to {
+    opacity: 0;
+  }
+}
+
+.list-menu {
+  position: relative;
+  top: 100px;
+  height: 50%;
+  padding-left: 30px;
+  font-size: 25px;
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  row-gap: 25px;
+
+  li {
+    transition: transform 0.2s ease-in;
+
+    &:hover {
+      transform: scale(1.05);
+      cursor: pointer;
+    }
+  }
+}
+
+.icon-menu {
+  position: relative;
+  top: 30px;
+  left: 30px;
+  font-size: 30px;
+  transition: transform 0.2s ease-in;
+  &:hover {
+    transform: scale(1.1);
+    cursor: pointer;
+  }
+}

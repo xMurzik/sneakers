@@ -1,0 +1,35 @@
+.left-panel-entering {
+  animation: backgroung-opacity 0.3s reverse;
+}
+
+.left-panel-exiting {
+  animation: backgroung-opacity 0.3s;
+}
+
+@keyframes backgroung-opacity {
+  from {
+    opacity: 1;
+  }
+
+  to {
+    opacity: 0;
+  }
+}
+
+.left-panel-menu-entering {
+  animation: left-panel-menu-transfrom 0.3s;
+}
+
+.left-panel-menu-exiting {
+  animation: left-panel-menu-transfrom 0.3s reverse;
+}
+
+@keyframes left-panel-menu-transfrom {
+  from {
+    transform: translateX(-330px);
+  }
+
+  to {
+    left: translateX(330px);
+  }
+}

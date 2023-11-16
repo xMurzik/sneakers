@@ -1,0 +1,17 @@
+.modal-galery-entering {
+  animation: modal-galery-opacity 0.3s reverse;
+}
+
+.modal-galery-exiting {
+  animation: modal-galery-opacity 0.3s;
+}
+
+@keyframes modal-galery-opacity {
+  from {
+    opacity: 1;
+  }
+
+  to {
+    opacity: 0;
+  }
+}
