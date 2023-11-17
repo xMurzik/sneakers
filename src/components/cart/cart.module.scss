@@ -1,0 +1,33 @@
+.container {
+  height: 150px;
+  width: 300px;
+  position: absolute;
+  right: 300px;
+  border-radius: 5px;
+  top: 100px;
+  z-index: 2;
+  background-color: rgb(224, 223, 223);
+
+  @media (max-width: 1170px) {
+    top: 70px;
+    right: 100px;
+  }
+}
+
+.card-enter {
+  opacity: 0;
+}
+
+.card-enter-active {
+  opacity: 1;
+  transition: opacity 300ms;
+}
+
+.card-exit {
+  opacity: 1;
+}
+
+.card-exit-active {
+  opacity: 0;
+  transition: opacity 300ms;
+}

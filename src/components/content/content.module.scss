@@ -1,5 +1,163 @@
 .container {
   margin-top: 70px;
+  margin-bottom: 5px;
   display: flex;
   justify-content: space-between;
+
+  @media (max-width: 770px) {
+    display: block;
+    margin-top: 0;
+  }
+
+  .swiper-container {
+    position: relative;
+
+    .swiper {
+      max-height: 60vh;
+    }
+
+    .nav-buttons {
+      top: 50%;
+      transform: translateY(-50%);
+      padding: 5px;
+      z-index: 1;
+      border-radius: 50%;
+      font-size: 30px;
+      position: absolute;
+      background-color: white;
+
+      &:hover {
+        cursor: pointer;
+      }
+    }
+
+    .next-button {
+      right: 20px;
+    }
+
+    .prev-button {
+      left: 20px;
+    }
+  }
+
+  .pic {
+    width: 100%;
+  }
+}
+
+.info-container {
+  margin-top: 15px;
+
+  h3 {
+    margin-left: 10px;
+    font-size: 20px;
+    color: var(--orange-text);
+  }
+
+  h1 {
+    margin-left: 10px;
+    margin-top: 15px;
+    font-size: 45px;
+  }
+
+  h2 {
+    margin-left: 10px;
+    margin-top: 20px;
+    span {
+      margin-left: 10px;
+      position: relative;
+      top: -3px;
+      padding: 4px;
+      font-size: 15px;
+      border-radius: 5px;
+      background-color: hsla(26, 100%, 55%, 0.267);
+      color: var(--orange-text);
+    }
+  }
+
+  h4 {
+    margin-left: 10px;
+    margin-top: 10px;
+    text-decoration: line-through;
+    color: var(--text-gray);
+  }
+
+  p {
+    margin-left: 10px;
+    margin-top: 25px;
+    color: var(--text-gray);
+    line-height: 23px;
+  }
+
+  .container-buttons {
+    display: flex;
+    justify-content: start;
+    column-gap: 55px;
+    margin-top: 25px;
+
+    position: relative;
+    top: -80px;
+    left: calc(100vw - 400px);
+
+    @media (max-width: 566px) {
+      position: unset;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      gap: 20px;
+    }
+
+    .button-count-item {
+      height: 40px;
+      width: 120px;
+      border-radius: 5px;
+      background-color: hsla(230, 6%, 80%, 0.559);
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+
+      @media (max-width: 566px) {
+        width: 95%;
+      }
+
+      .icon-minus {
+        margin-left: 10px;
+        color: var(--orange-text);
+        &:hover {
+          cursor: pointer;
+          scale: (1.1);
+        }
+      }
+
+      .icon-plus {
+        margin-right: 10px;
+        color: var(--orange-text);
+        &:hover {
+          cursor: pointer;
+          scale: (1.1);
+        }
+      }
+    }
+
+    .button-add-item {
+      text-align: center;
+      align-self: center;
+      padding: 10px;
+      width: 180px;
+      border-radius: 5px;
+      scale: 1.1;
+      background-color: var(--orange-text);
+      box-shadow: 4px 2px 38px 7px rgba(255, 125, 26, 0.37);
+      color: white;
+
+      @media (max-width: 566px) {
+        scale: 1;
+        width: 95%;
+      }
+
+      &:hover {
+        cursor: pointer;
+      }
+    }
+  }
 }

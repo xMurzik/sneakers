@@ -9,6 +9,11 @@
     height: 90px;
     border: none;
   }
+
+  @media (max-width: 770px) {
+    margin-left: 20px;
+    margin-right: 20px;
+  }
 }
 
 .logo-and-list {
