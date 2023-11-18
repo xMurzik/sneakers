@@ -1,3 +1,4 @@
+// import { useContext } from 'react';
 import { CSSTransition } from 'react-transition-group';
 import s from './cart.module.scss';
 
@@ -19,10 +20,10 @@ const Cart = ({ isShow }: ICardProps) => {
       unmountOnExit
       mountOnEnter
     >
-      <div
-        onClick={(e) => e.stopPropagation()}
-        className={s['container']}
-      ></div>
+      <div onClick={(e) => e.stopPropagation()} className={s['container']}>
+        <h3>Cart</h3>
+        <hr />
+      </div>
     </CSSTransition>
   );
 };

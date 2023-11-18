@@ -6,11 +6,29 @@
   border-radius: 5px;
   top: 100px;
   z-index: 2;
-  background-color: rgb(224, 223, 223);
+  box-shadow: 4px 4px 38px 7px rgba(34, 60, 80, 0.3);
+  background-color: white;
+
+  h3 {
+    margin-top: 10px;
+    margin-left: 10px;
+    font-size: 15px;
+  }
+
+  hr {
+    color: rgba(165, 159, 159, 0.498);
+    margin-top: 10px;
+  }
 
   @media (max-width: 1170px) {
     top: 70px;
     right: 100px;
+  }
+
+  @media (max-width: 475px) {
+    top: 70px;
+    right: unset;
+    width: 90%;
   }
 }
 
