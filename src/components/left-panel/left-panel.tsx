@@ -20,6 +20,16 @@ const LeftPanel = ({ onClickOverlayOrExit, isShow }: ILeftPanelProps) => {
     }
   }, [isShow, onClickOverlayOrExit, width]);
 
+  useEffect(() => {
+    if (isShow) {
+      document.body.style.overflow = 'hidden';
+    }
+
+    return () => {
+      document.body.style.overflow = 'unset';
+    };
+  }, [isShow]);
+
   return (
     <Transition in={isShow} timeout={300} mountOnEnter unmountOnExit>
       {(state) => (
