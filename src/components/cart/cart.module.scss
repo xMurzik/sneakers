@@ -9,6 +9,77 @@
   box-shadow: 4px 4px 38px 7px rgba(34, 60, 80, 0.3);
   background-color: white;
 
+  .checkout-button {
+    background-color: var(--orange-text);
+    border: none;
+    border-radius: 5px;
+    color: white;
+    font-weight: 1000;
+    width: 95%;
+    height: 30px;
+    margin-top: 5px;
+    position: relative;
+    left: 50%;
+    transform: translatex(-50%);
+
+    &:hover {
+      cursor: pointer;
+    }
+  }
+
+  .items-container {
+    height: 60px;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    padding-left: 10px;
+
+    .pic-logo {
+      height: 40px;
+      border-radius: 3px;
+      margin-right: 5px;
+    }
+
+    .item {
+      display: flex;
+      flex-direction: column;
+      height: 40px;
+      justify-content: space-between;
+    }
+
+    .name-item {
+      color: var(--text-gray);
+      font-size: 13px;
+    }
+
+    .price-item {
+      color: var(--text-gray);
+      font-size: 13px;
+
+      b {
+        color: black;
+        margin-left: 3px;
+      }
+    }
+
+    .basket-icon {
+      color: var(--text-gray);
+      margin-left: 5px;
+
+      &:hover {
+        cursor: pointer;
+        scale: (1.1);
+      }
+    }
+  }
+  h1 {
+    width: 110px;
+    position: relative;
+    top: 25%;
+    left: 50%;
+    transform: translateX(-55px);
+  }
+
   h3 {
     margin-top: 10px;
     margin-left: 10px;
@@ -28,7 +99,11 @@
   @media (max-width: 475px) {
     top: 70px;
     right: unset;
-    width: 90%;
+    margin: unset;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 70%;
+    min-width: 300px;
   }
 }
 
